@@ -52,18 +52,18 @@ The **Smart Expense Tracker** solves this by offering a persistent, queryable da
 
 <div align="center">
   <h3>🏠 Main Dashboard & Analytics</h3>
-  <img src="assets/image_f67376.jpg" alt="Dashboard View" width="850" style="border-radius:12px; box-shadow: 0px 10px 20px rgba(0,0,0,0.15);" />
+  <img src="docs/home%20page.jpeg" alt="Dashboard View" width="850" style="border-radius:12px; box-shadow: 0px 10px 20px rgba(0,0,0,0.15);" />
   
   <br/><br/>
 
   <table align="center" style="border-collapse: separate; border-spacing: 15px;">
     <tr>
-      <td align="center"><b>🔐 User Authentication (Login)</b><br/><img src="assets/image_f6739a.png" alt="Login" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
-      <td align="center"><b>📝 User Registration</b><br/><img src="assets/image_f67393.png" alt="Signup" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
+      <td align="center"><b>🔐 User Authentication (Login)</b><br/><img src="docs/sign%20in.jpeg" alt="Login" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
+      <td align="center"><b>📝 User Registration</b><br/><img src="docs/sign%20up.jpeg" alt="Signup" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
     </tr>
     <tr>
-      <td align="center"><b>🏷️ Category Management</b><br/><img src="assets/image_f6767f.png" alt="Categories" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
-      <td align="center"><b>💸 Expense Tracking Table</b><br/><img src="assets/image_f673d5.png" alt="Expenses" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
+      <td align="center"><b>🏷️ Category Management</b><br/><img src="docs/catogories.jpeg" alt="Categories" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
+      <td align="center"><b>💸 Expense Tracking Table</b><br/><img src="docs/expense%20listing.jpeg" alt="Expenses" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
     </tr>
   </table>
 </div>
@@ -115,13 +115,16 @@ Our system embraces a **Layered Architecture (MVC/MVT)**. React acts as the Pres
 
 ### 🔄 Complete System Flow Diagram
 *Shows the end-to-end interaction from React Components ➔ DRF Views ➔ Serializers ➔ Services ➔ Models.*
-<p align="center"><img src="assets/image_f66ff0.jpg" alt="Full System UML" width="900" style="border-radius:10px; border: 1px solid #ddd;"/></p>
+<p align="center"><img src="docs/full%20uml.jpeg" alt="Full System UML" width="900" style="border-radius:10px; border: 1px solid #ddd;"/></p>
 
 ### 🧩 Domain Models Class Diagram
-<p align="center"><img src="assets/image_f676a0.jpg" alt="Django Models UML" width="600" style="border-radius:10px; border: 1px solid #ddd;"/></p>
+<p align="center"><img src="docs/expense_tracker_layer_uml.jpeg" alt="Django Models UML" width="600" style="border-radius:10px; border: 1px solid #ddd;"/></p>
 
 ### ⚙️ Service Layer (Polymorphism & Strategies)
-<p align="center"><img src="assets/image_f676be.jpg" alt="Service Layer UML" width="600" style="border-radius:10px; border: 1px solid #ddd;"/></p>
+<p align="center"><img src="docs/service_layer_uml.jpeg" alt="Service Layer UML" width="600" style="border-radius:10px; border: 1px solid #ddd;"/></p>
+
+### 📡 Django REST Framework Views
+<p align="center"><img src="docs/django_rest_frame_work_uml.jpeg" alt="DRF Views UML" width="600" style="border-radius:10px; border: 1px solid #ddd;"/></p>
 
 ---
 
@@ -131,44 +134,23 @@ Our system embraces a **Layered Architecture (MVC/MVT)**. React acts as the Pres
 EXPENSE-TRACKER/
 ├── backend/                        # Django API Backend
 │   ├── manage.py
-│   ├── db.sqlite3                  # Relational Database
+│   ├── db.sqlite3                  
 │   ├── accounts/                   # Authentication Module (JWT)
-│   │   ├── models.py
-│   │   ├── views.py                # RegisterView, ProfileView
-│   │   ├── serializers.py          # RegisterSerializer
-│   │   └── urls.py                 
 │   ├── expense_tracker/            # Project Settings
-│   │   ├── settings.py             # Configured CORS, SimpleJWT, Installed Apps
-│   │   └── urls.py
-│   └── tracker/                    # Core Business Logic Module
-│       ├── models.py               # Category, Expense (TimeStampedModel)
-│       ├── services.py             # ExpenseAnalyzer, BudgetPolicy (OOP Services)
-│       ├── views.py                # CategoryViewSet, ExpenseViewSet, ExpenseSummaryView
-│       ├── serializers.py          # CategorySerializer, ExpenseSerializer
-│       └── urls.py                 # DRF DefaultRouter
-│
-└── frontend/                       # React Presentation Layer
-    ├── package.json
-    ├── public/
-    └── src/
-        ├── App.js                  # Main Application Shell & React Router
-        ├── App.css                 # Global Styles & Theme Variables
-        ├── index.js
-        ├── api/                    # API Integration Layer
-        │   ├── api.js              # Base Axios/Fetch config
-        │   ├── authservice.js      # Login, Register, JWT Management
-        │   └── ExpenseService.js   # CRUD operations for Tracker API
-        ├── components/             # Reusable UI Components
-        │   ├── Dashboard.jsx       # Recharts AreaChart, Budgets, Recent Expenses
-        │   ├── ExpenseForm.jsx     # Add/Edit form logic
-        │   ├── ExpenseList.jsx     # Data table with Edit/Delete actions
-        │   ├── Navbar.jsx          
-        │   ├── PrivateRoute.jsx    # Route Guard
-        │   └── Sidebar.jsx         
-        └── pages/                  # Top-level Routing Pages
-            ├── Login.jsx & .css    
-            ├── Register.jsx        
-            └── Categories.jsx      
+│   └── tracker/                    # Core Business Logic Module (OOP Services)
+├── docs/                           # Documentation & Assets
+│   ├── home page.jpeg              
+│   ├── full uml.jpeg               
+│   └── ...                         # (UML diagrams and UI screenshots)
+├── frontend/                       # React Presentation Layer
+│   ├── public/
+│   └── src/
+│       ├── App.js                  # Main Application Shell
+│       ├── api/                    # API Integration Layer
+│       ├── components/             # Reusable UI Components
+│       └── pages/                  # Routing Pages
+├── Expense_Tracker_CCP_Report.docx # Official Project Report
+└── README.md                       # Project Documentation
 ```
 
 ---
