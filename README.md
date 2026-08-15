@@ -1,4 +1,4 @@
-<div align="center">
+div align="center">
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Money%20Bag.png" alt="Money Bag" width="100" height="100" />
   
   <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=32&pause=1000&color=2563EB&center=true&vCenter=true&width=600&lines=Smart+Expense+Tracker;Object-Oriented+Finance+App;React+%2B+Django+%2B+SQLite;Full-Stack+Web+Application" alt="Typing SVG" />
@@ -21,10 +21,10 @@ This project was developed as the **Complex Computing Problem (CCP)** for the **
 
 **Department:** Computer Science & Information Technology (CSIT)
 
-| Name | Roll Number | Role / Contribution |
-| :--- | :--- | :--- |
-| **Muzammil Ahmed** | `CT-24307` | Full Stack Development, OOP Implementation, Frontend/Backend Integration |
-| **Raza Ali** | `CT-24308` | System Design, UML Architecture, Database Modeling, Documentation |
+This project was built collaboratively, with both team members working side-by-side across the entire stack—from system architecture and database modeling to full-stack development (React & Django) and OOP implementation.
+
+* **Muzammil Ahmed** (Roll No: `CT-24307`)
+* **Raza Ali** (Roll No: `CT-24308`)
 
 ---
 
@@ -52,18 +52,18 @@ The **Smart Expense Tracker** solves this by offering a persistent, queryable da
 
 <div align="center">
   <h3>🏠 Main Dashboard & Analytics</h3>
-  <img src="image_f67376.jpg" alt="Dashboard View" width="850" style="border-radius:12px; box-shadow: 0px 10px 20px rgba(0,0,0,0.15);" />
+  <img src="assets/image_f67376.jpg" alt="Dashboard View" width="850" style="border-radius:12px; box-shadow: 0px 10px 20px rgba(0,0,0,0.15);" />
   
   <br/><br/>
 
   <table align="center" style="border-collapse: separate; border-spacing: 15px;">
     <tr>
-      <td align="center"><b>🔐 User Authentication (Login)</b><br/><img src="image_f6739a.png" alt="Login" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
-      <td align="center"><b>📝 User Registration</b><br/><img src="image_f67393.png" alt="Signup" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
+      <td align="center"><b>🔐 User Authentication (Login)</b><br/><img src="assets/image_f6739a.png" alt="Login" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
+      <td align="center"><b>📝 User Registration</b><br/><img src="assets/image_f67393.png" alt="Signup" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
     </tr>
     <tr>
-      <td align="center"><b>🏷️ Category Management</b><br/><img src="image_f6767f.png" alt="Categories" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
-      <td align="center"><b>💸 Expense Tracking Table</b><br/><img src="image_f673d5.png" alt="Expenses" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
+      <td align="center"><b>🏷️ Category Management</b><br/><img src="assets/image_f6767f.png" alt="Categories" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
+      <td align="center"><b>💸 Expense Tracking Table</b><br/><img src="assets/image_f673d5.png" alt="Expenses" width="350" style="border-radius:10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);" /></td>
     </tr>
   </table>
 </div>
@@ -115,13 +115,13 @@ Our system embraces a **Layered Architecture (MVC/MVT)**. React acts as the Pres
 
 ### 🔄 Complete System Flow Diagram
 *Shows the end-to-end interaction from React Components ➔ DRF Views ➔ Serializers ➔ Services ➔ Models.*
-<p align="center"><img src="image_f66ff0.jpg" alt="Full System UML" width="900" style="border-radius:10px; border: 1px solid #ddd;"/></p>
+<p align="center"><img src="assets/image_f66ff0.jpg" alt="Full System UML" width="900" style="border-radius:10px; border: 1px solid #ddd;"/></p>
 
 ### 🧩 Domain Models Class Diagram
-<p align="center"><img src="image_f676a0.jpg" alt="Django Models UML" width="600" style="border-radius:10px; border: 1px solid #ddd;"/></p>
+<p align="center"><img src="assets/image_f676a0.jpg" alt="Django Models UML" width="600" style="border-radius:10px; border: 1px solid #ddd;"/></p>
 
 ### ⚙️ Service Layer (Polymorphism & Strategies)
-<p align="center"><img src="image_f676be.jpg" alt="Service Layer UML" width="600" style="border-radius:10px; border: 1px solid #ddd;"/></p>
+<p align="center"><img src="assets/image_f676be.jpg" alt="Service Layer UML" width="600" style="border-radius:10px; border: 1px solid #ddd;"/></p>
 
 ---
 
@@ -184,7 +184,7 @@ cd backend
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts ctivate
 
-# Install dependencies (Django, djangorestframework, djangorestframework-simplejwt, django-cors-headers)
+# Install dependencies
 pip install -r requirements.txt
 
 # Run database migrations
