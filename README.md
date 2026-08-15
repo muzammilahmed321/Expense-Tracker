@@ -1,4 +1,4 @@
-div align="center">
+<div align="center">
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Money%20Bag.png" alt="Money Bag" width="100" height="100" />
   
   <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=32&pause=1000&color=2563EB&center=true&vCenter=true&width=600&lines=Smart+Expense+Tracker;Object-Oriented+Finance+App;React+%2B+Django+%2B+SQLite;Full-Stack+Web+Application" alt="Typing SVG" />
