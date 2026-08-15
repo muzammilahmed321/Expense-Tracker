@@ -1,0 +1,236 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #dbeafe, #ffffff);
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.auth-card {
+  width: 400px;
+  background: white;
+  padding: 40px 35px;
+  border-radius: 22px;
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  animation: fadeUp 0.4s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.auth-card h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f2937;
+  letter-spacing: -0.5px;
+}
+
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+.auth-card label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+
+.auth-card input {
+  padding: 13px 15px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  background: #fafbfd;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.auth-card input::placeholder {
+  color: #9ca3af;
+}
+
+.auth-card input:focus {
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+
+.password-box {
+  display: flex;
+  gap: 10px;
+}
+
+.password-box input {
+  flex: 1;
+}
+
+.password-box button {
+  border: none;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 0 16px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.password-box button:hover {
+  background: #e2e8f0;
+  color: #1f2937;
+}
+
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0 4px;
+}
+
+.checkbox {
+  display: flex !important;
+  gap: 8px;
+  align-items: center;
+  font-weight: 400 !important;
+  font-size: 13.5px;
+  color: #4b5563;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.checkbox input {
+  width: 15px;
+  height: 15px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+.forgot {
+  border: none;
+  background: none;
+  color: #2563eb;
+  font-size: 13.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.forgot:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+
+.auth-btn {
+  margin-top: 18px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.3);
+  transition: opacity 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.auth-btn:hover {
+  opacity: 0.94;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.38);
+}
+
+.auth-btn:active {
+  transform: translateY(0);
+}
+
+.auth-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+
+.error-message {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 12px 14px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+
+.switch {
+  text-align: center;
+  margin-top: 22px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.switch button {
+  border: none;
+  background: none;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: opacity 0.2s ease;
+}
+
+.switch button:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 480px) {
+  .auth-card {
+    width: 100%;
+    padding: 30px 24px;
+    border-radius: 18px;
+  }
+
+  .auth-card h1 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "model": "tracker.category",
+    "pk": 1,
+    "fields": { "name": "Food", "monthly_budget": "300.00", "created_at": "2026-01-01T00:00:00Z", "updated_at": "2026-01-01T00:00:00Z" }
+  },
+  {
+    "model": "tracker.category",
+    "pk": 2,
+    "fields": { "name": "Transport", "monthly_budget": "100.00", "created_at": "2026-01-01T00:00:00Z", "updated_at": "2026-01-01T00:00:00Z" }
+  },
+  {
+    "model": "tracker.category",
+    "pk": 3,
+    "fields": { "name": "Entertainment", "monthly_budget": "80.00", "created_at": "2026-01-01T00:00:00Z", "updated_at": "2026-01-01T00:00:00Z" }
+  }
+]
