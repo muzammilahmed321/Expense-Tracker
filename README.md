@@ -30,7 +30,7 @@ This project was built collaboratively, with both team members working side-by-s
 
 ## 🎯 Problem Statement & Objectives
 Personal financial management is typically done via scattered spreadsheets or generic notes, leading to error-prone tracking with no real-time insights. 
-The **Smart Expense Tracker** solves this by offering a persistent, queryable data model with automated budget-threshold alerts. 
+The **Expense Tracker** solves this by offering a persistent, queryable data model with automated budget-threshold alerts. 
 
 **Objectives:**
 * Apply core **OOP Principles** (Encapsulation, Inheritance, Polymorphism, Abstraction) to structure business logic.
